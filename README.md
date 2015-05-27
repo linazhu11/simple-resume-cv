@@ -10,11 +10,11 @@ Forked from zachscrivena
 **Compiled sample document:**<br>
 [CV.pdf](https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/CV.pdf)
 
-Template for a simple resume or curriculum vitae (CV), in XeLaTeX.
 
 **Sample pages (click to enlarge):**
 
 <img height="500" src="https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/ScreenShot_Page1.png" alt="Screenshot_Page1">
+
 <img height="500" src="https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/ScreenShot_Page2.png" alt="Screenshot_Page2">
 
 ## Main Features
