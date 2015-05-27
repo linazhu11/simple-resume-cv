@@ -8,20 +8,23 @@
 % Long table for page layout.
 \usepackage{longtable}
 
+%no page number
+\usepackage{nopageno}
+
 % Geometry package for page margins.
 \usepackage[
-left=0.70in,
-right=0.70in,
-top=0.70in,
-bottom=0.55in,
+left=0.5in,
+right=0.5in,
+top=0.5in,
+bottom=0.5in,
 nohead,
-includefoot]{geometry}
+nofoot]{geometry}
 
 % Hyphenation: Disabled.
 \usepackage[none]{hyphenat}
 
 % XeLaTeX packages.
-\usepackage{fontspec}
+\usepackage{fontspec} 
 \defaultfontfeatures{Ligatures=TeX}
 \usepackage{xunicode}
 \usepackage{xltxtra}
@@ -30,32 +33,32 @@ includefoot]{geometry}
 % The "Tinos" fonts are released under the Apache License Version 2.0,
 % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
-\setmainfont
-[Path=./Fonts/Tinos/,
-ItalicFont=Tinos-Italic,
-BoldFont=Tinos-Bold,
-BoldItalicFont=Tinos-BoldItalic]
-{Tinos-Regular.ttf}
+%\setmainfont
+%[Path=./Fonts/Tinos/,
+%ItalicFont=Tinos-Italic,
+%BoldFont=Tinos-Bold,
+%BoldItalicFont=Tinos-BoldItalic]
+%{Tinos-Regular.ttf}
 
 % Sans-serif font: Switched to "Tinos".
-\renewcommand{\sffamily}{\rmfamily}
+%\renewcommand{\sffamily}{\rmfamily}
 
 % Typewriter (monospace) font: Switched to "Tinos".
-\renewcommand{\ttfamily}{\rmfamily}
+%\renewcommand{\ttfamily}{\rmfamily}
 
 % Small caps font: Switched to "Tinos".
-\renewcommand{\scshape}{\rmfamily}
+%\renewcommand{\scshape}{\rmfamily}
 
 % Secondary font: "GNU FreeFont".
 % The "GNU FreeFont" fonts are released under the
 % GNU General Public License Version 3, and can be downloaded
 % for free at <https://savannah.gnu.org/projects/freefont/>.
-\newcommand{\UseSecondaryFont}{\fontspec
-[Path=./Fonts/GNUFreeFont/,
-ItalicFont=FreeSerifItalic,
-BoldFont=FreeSerifBold,
-BoldItalicFont=FreeSerifBoldItalic]
-{FreeSerif.otf}}
+%\newcommand{\UseSecondaryFont}{\fontspec
+%[Path=./Fonts/GNUFreeFont/,
+%ItalicFont=FreeSerifItalic,
+%BoldFont=FreeSerifBold,
+%BoldItalicFont=FreeSerifBoldItalic]
+%{FreeSerif.otf}}
 
 % Symbols (unicode).
 \newcommand{\BulletSymbol}{{\char"2022}}
@@ -64,16 +67,14 @@ BoldItalicFont=FreeSerifBoldItalic]
 % PDF settings and properties.
 \usepackage{hyperref}
 
-% Headers and footers: Blank header, page number in footer.
+% Headers and footers: Blank header, blank footer.
 \makeatletter
 \def\ps@plain{%
 \def\@oddhead{}%
 \def\@evenhead{}%
-\def\@oddfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}%
-\def\@evenfoot{\footnotesize\hfill{Page}~{\thepage}~of~\pageref{LastPage}\hfill}}
+\def\@oddfoot{}%
+\def\@evenfoot{}}
 \makeatother
-
-\pagestyle{plain}
 
 % Paragraph style: No indentation.
 \setlength{\parindent}{0in}
@@ -153,22 +154,22 @@ BoldItalicFont=FreeSerifBoldItalic]
 \renewcommand{\title}[1]{%
 \pdfbookmark[1]{#1}{#1}%
 \par\begin{center}%
-\par\begin{Huge}%
+\par\begin{huge}%
 \textbf{#1}%
-\par\end{Huge}%
+\par\end{huge}%
 \par\end{center}%
 \par\vspace{-1.75em}\par}
 
 % Macro: subtitle (personal information below name).
 \newenvironment{subtitle}
 {\par\begin{center}%
-\par\begin{footnotesize}}
-{\par\end{footnotesize}%
+\par\begin{small}}
+{\par\end{small}%
 \par\end{center}\par}
 
 % Macro: body (rest of the document).
 \newenvironment{body}
-{\par\vspace{-1em}\par
+{\par\vspace{-2em}\par
 \begin{longtable}{p{0.15\textwidth}p{0.80\textwidth}}}
 {\par\end{longtable}\par}
 
@@ -195,7 +196,7 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Macro: detail (text in smaller font under an entry).
 \newenvironment{detail}
-{\par\begingroup\fontsize{8.6}{10.3}\selectfont}
+{\par\begingroup\fontsize{8.9}{10.3}\selectfont}
 {\par\endgroup\par}
 
 % Macro: BulletItem.
