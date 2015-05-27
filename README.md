@@ -1,7 +1,10 @@
 simple-resume-cv
 ================
 
+Template for a simple resume or curriculum vitae (CV), in XeLaTeX.
+
 EDITED BY LINA ZHU, MAY 2015
+
 Forked from zachscrivena
 
 **Compiled sample document:**<br>
@@ -12,7 +15,7 @@ Template for a simple resume or curriculum vitae (CV), in XeLaTeX.
 **Sample pages (click to enlarge):**
 
 <img height="500" src="https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/ScreenShot_Page1.png" alt="Screenshot 01">
-<img height="500" src="https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/Miscellaneous/ScreenShot_Page2.png" alt="Screenshot 02">
+<img height="500" src="https://raw.githubusercontent.com/linazhu11/simple-resume-cv/master/ScreenShot_Page2.png" alt="Screenshot 02">
 
 ## Main Features
 
